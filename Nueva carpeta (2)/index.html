@@ -56,6 +56,50 @@
   </tr>
 </table>
 
-    
+
+
+<style>
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+}
+.container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.nav_grid{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.content_grid{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.sidebar_grid{
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end:5;
+}
+</style>
+<div class="container">
+  <div class="nav_grid">
+    1</div>
+  <div class="content_grid">
+    2</div>
+  <div class="sidebar_grid">
+    3</div>  
+  <!--<div>4</div>
+  <div>5</div>
+  <div>3</div>  
+  <div>7</div>
+  <div>8</div>-->
+</div>
 </body>
 </html>
